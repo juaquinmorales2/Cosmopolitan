@@ -1,7 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { MapPin, Clock, Phone, Mail } from 'lucide-react';
 
 export default function Contact() {
+  const [nombre, setNombre] = useState('');
+  const [asunto, setAsunto] = useState('');
+  const [mensaje, setMensaje] = useState('');
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const texto = `Hola! Mi nombre es ${nombre}. Asunto: ${asunto}. Mensaje: ${mensaje}`;
+    const numeroWhatsApp = '59891234567'; // Reemplaza con tu número real
+    const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
+
+    window.open(url, '_blank');
+  };
+
   return (
     <section id="contact" className="py-20 bg-black">
       <div className="container mx-auto px-4">
@@ -58,48 +72,40 @@ export default function Contact() {
           </div>
 
           <div className="bg-gradient-to-br from-gray-900 to-black p-8 rounded-xl border border-gray-800">
-            <form className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label className="block text-sm font-medium text-gray-300 mb-2">
-                  Nombre
-                </label>
+                <label className="block text-sm font-medium text-gray-300 mb-2">Nombre</label>
                 <input
                   type="text"
+                  value={nombre}
+                  onChange={(e) => setNombre(e.target.value)}
                   className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-pink-500 transition-colors"
                   placeholder="Tu nombre"
+                  required
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-300 mb-2">
-                  Email
-                </label>
+                <label className="block text-sm font-medium text-gray-300 mb-2">Asunto</label>
                 <input
-                  type="email"
+                  type="text"
+                  value={asunto}
+                  onChange={(e) => setAsunto(e.target.value)}
                   className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-pink-500 transition-colors"
-                  placeholder="tu@email.com"
+                  placeholder="Reserva, evento, consulta, etc."
+                  required
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-300 mb-2">
-                  Teléfono
-                </label>
-                <input
-                  type="tel"
-                  className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-pink-500 transition-colors"
-                  placeholder="(555) 123-4567"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-300 mb-2">
-                  Mensaje
-                </label>
+                <label className="block text-sm font-medium text-gray-300 mb-2">Mensaje</label>
                 <textarea
                   rows={4}
+                  value={mensaje}
+                  onChange={(e) => setMensaje(e.target.value)}
                   className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-pink-500 transition-colors"
                   placeholder="Cuéntanos sobre tu reserva o consulta..."
+                  required
                 />
               </div>
 
@@ -107,7 +113,7 @@ export default function Contact() {
                 type="submit"
                 className="w-full bg-gradient-to-r from-pink-600 to-pink-700 py-3 rounded-lg font-semibold hover:from-pink-700 hover:to-pink-800 transition-all duration-300 transform hover:scale-105"
               >
-                Enviar Mensaje
+                Enviar por WhatsApp
               </button>
             </form>
           </div>

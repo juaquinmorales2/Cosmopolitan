@@ -43,7 +43,7 @@ export default function Gallery() {
             Galería
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Descubre los diferentes ambientes y espacios que hacen de Rouge Lounge una experiencia única
+            Descubre los diferentes ambientes y espacios que hacen de Cosmopolitan una experiencia única
           </p>
         </div>
 
@@ -73,14 +73,6 @@ export default function Gallery() {
               <div className="absolute inset-0 border-2 border-transparent group-hover:border-pink-500/50 rounded-xl transition-colors duration-300"></div>
             </div>
           ))}
-        </div>
-
-        {/* Call to action */}
-        <div className="text-center mt-12">
-          <p className="text-gray-300 mb-6">¿Quieres vivir la experiencia Rouge Lounge?</p>
-          <button className="bg-gradient-to-r from-pink-600 to-pink-700 px-8 py-3 rounded-full text-lg font-semibold hover:from-pink-700 hover:to-pink-800 transition-all duration-300 transform hover:scale-105">
-            Hacer Reserva Ahora
-          </button>
         </div>
       </div>
     </section>

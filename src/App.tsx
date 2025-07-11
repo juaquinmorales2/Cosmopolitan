@@ -2,10 +2,10 @@ import React from 'react';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import About from './components/About';
-import Services from './components/Services';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Reservation from './components/Reservation';
 
 function App() {
   const scrollToSection = (sectionId: string) => {
@@ -19,8 +19,8 @@ function App() {
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
       <Navigation scrollToSection={scrollToSection} />
       <Hero scrollToSection={scrollToSection} />
+      <Reservation />
       <About />
-      <Services />
       <Gallery />
       <Contact />
       <Footer />

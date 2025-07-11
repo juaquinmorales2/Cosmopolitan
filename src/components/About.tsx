@@ -10,8 +10,8 @@ export default function About() {
             Experiencia Única
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Rouge Lounge es más que un lugar, es una experiencia. Combinamos la elegancia de un lounge sofisticado 
-            con la energía vibrante de un club nocturno y la calidad gastronómica de un resto pub de primer nivel.
+            Cosmopolitan es más que un lugar, es una experiencia. Combinamos la elegancia de un lounge sofisticado 
+            con la energía vibrante de un club nocturno y la calidad gastronómica de un resto pub de calidad unica en Maldonado.
           </p>
         </div>
 
@@ -32,7 +32,7 @@ export default function About() {
             </div>
             <h3 className="text-2xl font-bold mb-4 text-amber-400">Entretenimiento</h3>
             <p className="text-gray-300 leading-relaxed">
-              Shows en vivo, DJ's internacionales y entretenimiento de primera clase todas las noches.
+              Shows en vivo, DJ's y entretenimiento de primera clase todas las noches.
             </p>
           </div>
 

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import logo from '../assets/Untitled_Project__17_-removebg-preview.png';
+
 
 interface NavigationProps {
   scrollToSection: (sectionId: string) => void;
@@ -28,13 +30,13 @@ export default function Navigation({ scrollToSection }: NavigationProps) {
       scrolled ? 'bg-black/90 backdrop-blur-md py-4' : 'bg-transparent py-6'
     }`}>
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between md:mt-2 mt-8">
-          <div className="text-2xl font-bold bg-gradient-to-r from-pink-500 to-amber-500 ml-7 bg-clip-text text-transparent">
-            ROUGE LOUNGE
+        <div className="flex items-center justify-between md:mt-2 mt-4">
+          <div className="text-2xl font-bold bg-gradient-to-r from-pink-500 to-amber-500 md:ml-8 bg-clip-text text-transparent">
+            <img src= {logo} alt="Cosmopolitan" className='h-12' />
           </div>
           
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-8 md:mr-8">
             <button onClick={() => handleNavClick('home')} className="hover:text-pink-400 transition-colors">
               Inicio
             </button>
