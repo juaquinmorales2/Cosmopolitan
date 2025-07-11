@@ -1,5 +1,5 @@
 import React from 'react';
-import hero from '../assets/3580095-sd_426_240_25fps.mp4';
+import hero from '../assets/hero.mp4';
 
 interface HeroProps {
   scrollToSection: (sectionId: string) => void;
