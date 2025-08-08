@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import logo from '../Assets/cosmopo.png';
-
+import logo from '../assets/cosmopo.png';
 
 interface NavigationProps {
   scrollToSection: (sectionId: string) => void;
