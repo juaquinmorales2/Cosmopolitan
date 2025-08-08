@@ -43,16 +43,13 @@ export default function Navigation({ scrollToSection }: NavigationProps) {
             <button onClick={() => handleNavClick('about')} className="hover:text-pink-400 transition-colors">
               Nosotros
             </button>
-            <button onClick={() => handleNavClick('services')} className="hover:text-pink-400 transition-colors">
-              Servicios
-            </button>
             <button onClick={() => handleNavClick('gallery')} className="hover:text-pink-400 transition-colors">
               Galería
             </button>
             <button onClick={() => handleNavClick('contact')} className="hover:text-pink-400 transition-colors">
               Contacto
             </button>
-            <button className="bg-gradient-to-r from-pink-600 to-pink-700 px-6 py-2 rounded-full hover:from-pink-700 hover:to-pink-800 transition-all duration-300 transform hover:scale-105">
+            <button onClick={() => handleNavClick('reservation')} className="bg-gradient-to-r from-pink-600 to-pink-700 px-6 py-2 rounded-full hover:from-pink-700 hover:to-pink-800 transition-all duration-300 transform hover:scale-105">
               Reservar
             </button>
           </div>

@@ -3,6 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "description": "A starter template for Vite with React and TypeScript",
+  "keywords": [
+    "vite",
+    "react",
+    "typescript"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",

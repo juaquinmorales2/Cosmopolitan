@@ -1,5 +1,5 @@
 import React, { useState, FormEvent } from 'react';
-import Local from '../assets/a-23-1600x1200_16_2135.jpeg';
+import Local from '../assets/25494a84-bab4-40f2-a3de-4634969a7262.jpeg';
 
 interface ReservationData {
   name: string;
@@ -30,7 +30,7 @@ export default function ReservationForm() {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    const phone = '59896303338';
+    const phone = '59893347979';
     const text = `*Reserva de Mesa*%0A
 *Nombre:* ${encodeURIComponent(form.name)}%0A
 *Fecha:* ${encodeURIComponent(form.date)}%0A
@@ -42,7 +42,7 @@ export default function ReservationForm() {
   };
 
   return (
-    <section className="bg-black/70 py-12 flex justify-center">
+    <section className="bg-black/70 py-12 flex justify-center" id="reservation">
       <div className="max-w-6xl w-full flex flex-col lg:flex-row gap-12 px-4">
         {/* Formulario */}
         <form
@@ -147,7 +147,7 @@ export default function ReservationForm() {
           </h2>
           <div className="w-full h-80 rounded-lg overflow-hidden">
             <iframe
-              src="https://maps.google.com/maps?q=Maldonado%20Uruguay&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.914090711928!2d-54.95574612424645!3d-34.90860537284646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95751b16c61483bb%3A0x752d0ca4a415fd66!2sCHICKEN%20FRITO!5e0!3m2!1ses-419!2suy!4v1753282957670!5m2!1ses-419!2suy"
               className="w-full h-full"
               allowFullScreen
               loading="lazy"

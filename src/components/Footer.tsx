@@ -24,13 +24,13 @@ export default function Footer() {
             Donde cada noche es una experiencia única
           </p>
           <div className="flex justify-center space-x-6 mb-6">
-            <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+            <a href="https://www.facebook.com/profile.php?id=61553545862212" className="text-gray-400 hover:text-blue-400 transition-colors">
               Facebook
             </a>
-            <a href="#" className="text-gray-400 hover:text-pink-400 transition-colors">
+            <a href="https://www.instagram.com/cosmopolitan_uy/?__pwa=1" className="text-gray-400 hover:text-pink-400 transition-colors">
               Instagram
             </a>
-            <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">
+            <a href="https://wa.me/59893347979" className="text-gray-400 hover:text-green-400 transition-colors">
               Whatsapp
             </a>
           </div>

@@ -10,7 +10,7 @@ export default function Contact() {
     e.preventDefault();
 
     const texto = `Hola! Mi nombre es ${nombre}. Asunto: ${asunto}. Mensaje: ${mensaje}`;
-    const numeroWhatsApp = '59891234567'; // Reemplaza con tu número real
+    const numeroWhatsApp = '59893347979'; // Reemplaza con tu número real
     const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
 
     window.open(url, '_blank');
@@ -36,7 +36,7 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-pink-400">Dirección</h3>
-                <p className="text-gray-300">Av. Principal 123, Centro de la Ciudad</p>
+                <p className="text-gray-300">Av. Santa Teresa 838, Maldonado</p>
               </div>
             </div>
 
@@ -46,29 +46,10 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-amber-400">Teléfono</h3>
-                <p className="text-gray-300">+1 (555) 123-4567</p>
+                <p className="text-gray-300">+598 93 347 979</p>
               </div>
             </div>
 
-            <div className="flex items-center space-x-4">
-              <div className="bg-gradient-to-br from-pink-600 to-amber-600 w-12 h-12 rounded-full flex items-center justify-center">
-                <Mail size={20} />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-pink-400">Email</h3>
-                <p className="text-gray-300">info@rougelounge.com</p>
-              </div>
-            </div>
-
-            <div className="flex items-center space-x-4">
-              <div className="bg-gradient-to-br from-amber-600 to-pink-600 w-12 h-12 rounded-full flex items-center justify-center">
-                <Clock size={20} />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-amber-400">Horarios</h3>
-                <p className="text-gray-300">Miércoles a Domingo: 8:00 PM - 4:00 AM</p>
-              </div>
-            </div>
           </div>
 
           <div className="bg-gradient-to-br from-gray-900 to-black p-8 rounded-xl border border-gray-800">
