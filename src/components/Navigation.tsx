@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import logo from '../assets/Untitled_Project__17_-removebg-preview.png';
+import logo from '../Assets/cosmopo.png';
 
 
 interface NavigationProps {
